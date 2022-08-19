@@ -1,0 +1,61 @@
+@import "../../index";
+.future__container {
+    color: white;
+    display: flex;
+    // gap: 6rem;
+    padding: 4rem 0;
+    @include tablet {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    @include mobile {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    @include smobile {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .future__title {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+        @include tablet {
+            margin: 0;
+            margin-bottom: 3rem;
+        }
+        @include mobile {
+            margin: 0;
+            margin-bottom: 3rem;
+        }
+        @include mobile {
+            margin: 0;
+            margin-bottom: 3rem;
+        }
+        // gap: 3rem;
+        .title {
+            font-size: 3.4rem;
+            line-height: 4.5rem;
+            font-weight: 800;
+            margin-bottom: 3rem;
+        }
+        p {
+            font-size: 1.6rem;
+            line-height: 3rem;
+            font-weight: 500;
+            color: $color-subtext;
+            cursor: pointer;
+        }
+    }
+
+    .future__info {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        // gap: 3rem;
+        & .features__container:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+}

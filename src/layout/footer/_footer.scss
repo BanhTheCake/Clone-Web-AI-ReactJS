@@ -1,0 +1,55 @@
+@import "../../index";
+
+.footer__background {
+    background-color: $color-footer;
+    overflow: hidden;
+    .footer__container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 6rem;
+        @include tablet {
+            padding: 4rem;
+        }
+        @include mobile {
+            padding: 4rem;
+        }
+
+        @include smobile {
+            padding: 2rem;
+        }
+        .title {
+            text-align: center;
+            font-weight: 800;
+            font-size: 6.4rem;
+            line-height: 7.5rem;
+            margin-bottom: 4rem;
+            @include mobile {
+                font-size: 5rem;
+                line-height: 6.5rem;
+            }
+
+            @include smobile {
+                font-size: 4rem;
+                line-height: 5.5rem;
+            }
+        }
+        .footer__button {
+            display: flex;
+            margin-bottom: 6rem;
+            button {
+                color: white;
+                margin: auto;
+                padding: 1.5rem 2.2rem;
+                border: 1px solid white;
+                background-color: transparent;
+                font-size: 1.8rem;
+                line-height: 2.1rem;
+                word-spacing: 2px;
+            }
+        }
+        .copyright {
+            color: white;
+            text-align: center;
+        }
+    }
+}

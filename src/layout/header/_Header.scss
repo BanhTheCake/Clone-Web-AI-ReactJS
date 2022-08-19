@@ -1,0 +1,20 @@
+@import "../../index";
+
+.header-container {
+    .header-wrapper {
+        max-width: 1280px;
+        color: white;
+        margin: 0 auto;
+        padding: 0 6rem;
+        @include tablet {
+            padding: 0 4rem;
+        }
+        @include mobile {
+            padding: 0 4rem;
+        }
+
+        @include smobile {
+            padding: 0 2rem;
+        }
+    }
+}

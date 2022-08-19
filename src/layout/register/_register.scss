@@ -1,0 +1,43 @@
+@import "../../index";
+
+.register__container {
+    margin: 4rem 0;
+    padding: 3rem;
+    background: $gradient-bar;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    @include smobile {
+        flex-direction: column;
+    }
+    .register__title {
+        flex: 1;
+        color: white;
+        .title {
+            font-size: 1.6rem;
+            line-height: 3rem;
+            font-weight: 500;
+        }
+        p:last-child {
+            font-size: 2.4rem;
+            line-height: 4.5rem;
+            font-weight: 800;
+            @include smobile {
+                line-height: 4rem;
+            }
+        }
+    }
+    button {
+        flex-shrink: 0;
+        padding: 1rem 2.6rem;
+        border: unset;
+        border-radius: 100px;
+        background-color: $color-bg;
+        color: white;
+        font-size: 1.8rem;
+        font-family: $font-family;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
